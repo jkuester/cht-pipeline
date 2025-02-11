@@ -2,7 +2,7 @@
 {%- set form_indexes = []-%}
 -- add columns specific to this form
 {% set form_columns %}
-  couchdb.doc->'fields' ->> 'hello' AS hello,
+  couchdb.doc->'fields' ->> 'hello' AS hello
 END AS jkuester
 {% endset %}
 
